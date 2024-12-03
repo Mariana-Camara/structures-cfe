@@ -21,7 +21,7 @@ let structure = [
     unit: ["Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Kg"],
     price: [8000, 3500, 2200, 4500, 2459, 1100, 80],
     store: ["D163", "D163", "D163", "D163", "D163", "D163", "D163"],
-    image: "VS1.jpg",
+    image: "structur.png",
   },
   {
     id: "2T",
@@ -81,7 +81,7 @@ let structure = [
       "D163",
       "D163",
     ],
-    image: "VS2.jpg",
+    image: "AD2G.jpg",
   },
   {
     id: "3T",
@@ -142,12 +142,11 @@ let structure = [
       "D163",
       "D163",
     ],
-    image: "VS3.jpg",
+    image: "AD2G.jpg",
   },
 ];
 
 createCard([], 0);
-
 
 function createCard(filter, state) {
   let card = "";
@@ -156,12 +155,13 @@ function createCard(filter, state) {
   // 0 - Filtro por defecto
   // 1 - Filtro con resultados
   // 2 - Filtro sin resultados
+  // 3 - Filtro por defecto 2
 
   if (state === 0) {
     for (let i = 0; i < structure.length; i++) {
-      detailCard = `<div class="card">
+      detailCard = `<div class="card" id="${structure[i].structure}" >
                               <h2>${structure[i].structure}</h2>
-                              <img src="structur.png" alt="${structure[i].structure}" >
+                              <img src="assets/${structure[i].image}" alt="${structure[i].structure}" >
                               <h3>${structure[i].meaning}</h3>
                               <p>${structure[i].description}</p>
                               <button class="read-more" data-target="${structure[i].id}">Leer más</button>
@@ -170,31 +170,35 @@ function createCard(filter, state) {
 
       card += detailCard;
     }
+    cardHtml.innerHTML = card;
   } else if (state === 1) {
-    for (let i = 0; i < filter.length; i++) {
-        detailCard = `<div class="card">
-                                <h2>${filter[i].structure}</h2>
-                                <img src="structur.png" alt="${filter[i].structure}" >
-                                <h3>${filter[i].meaning}</h3>
-                                <p>${filter[i].description}</p>
-                                <button class="read-more" data-target="${filter[i].id}">Leer más</button>
-                            </div>
-                             `;
-  
-        card += detailCard;
-      }
-  } else {
+    for (let i = 0; i < structure.length; i++) {
+      document.getElementById(`${structure[i].structure}`).style.display =
+        "none";
+    }
 
+    for (let i = 0; i < filter.length; i++) {
+      document.getElementById(`${filter[i].structure}`).style.display = "block";
+    }
+  } else if (state == 2) {
     // HTLM SIN RESULTADIS
-    card = '<h2 style=" margin-top: 8em;">Sin Resultados</h2>'
+    // card = '<h2 style="margin-top: 8em;">Sin Resultados</h2>'
+    document.getElementById("result").style.display = "block";
+    document.getElementById("container").style.display = "none";
+  } else {
+    document.getElementById("result").style.display = "none";
+    document.getElementById("container").style.display = "flex";
+
+    for (let i = 0; i < structure.length; i++) {
+      document.getElementById(`${structure[i].structure}`).style.display =
+        "block";
+    }
   }
 
-  cardHtml.innerHTML = card;
-
-  if(state === 0 || state === 1)
-  createModal();
+  if (state === 0) createModal();
+  // if(state === 0 || state === 1)
+  // createModal();
 }
-
 
 function createRow(index) {
   const { code, unit, price, store, material, amount } = structure[index];
@@ -230,39 +234,35 @@ function search() {
   input = document.getElementById("buscador");
   filter = input.value.toLowerCase();
 
-  if (filter.length >= 4) {
+  // if (filter.length >= 3) {
 
-    let result = structure.filter(
-      (str) =>
-      (
-                
-        str.structure.toLowerCase().includes(filter)
-        ||
-                
-        str.meaning.toLowerCase().includes(filter)
-      )
+  let result = structure.filter(
+    (str) =>
+      str.structure.toLowerCase().includes(filter) ||
+      str.meaning.toLowerCase().includes(filter)
+  );
 
-    );
+  // console.log(result)
 
-    if(result.length !== 0 ) createCard( result, 1)
-    else createCard([], 2) 
+  if (result.length !== 0) createCard(result, 1);
+  else createCard([], 2);
 
-  } else if( filter.length===0){
-    createCard([],0);
+  // } else
+  if (filter.length === 0) {
+    createCard([], 3);
   }
 }
 
-
 function createModal() {
-    let modal = "";
-    for (let i = 0; i < structure.length; i++) {
-      let result = createRow(i);
-    
-      let detailModal = `<div id="${structure[i].id}" class="modal">
+  let modal = "";
+  for (let i = 0; i < structure.length; i++) {
+    let result = createRow(i);
+
+    let detailModal = `<div id="${structure[i].id}" class="modal">
                     <div class="modal-content">
                         <span class="close-button">&times;</span>
                         <h2>${structure[i].structure}</h2>
-                        <img src="structur.png" alt="${structure[i].structure}" >
+                        <img src="assets/${structure[i].image}" alt="${structure[i].structure}" >
                         <h3>${structure[i].meaning}</h3>
                         <p>${structure[i].description}</p>
         
@@ -284,35 +284,34 @@ function createModal() {
                 </div>
                 </div>
                      `;
-    
-      modal += detailModal;
-    }
-    
-    modelHtml.innerHTML = modal;
-    
-    const buttons = document.querySelectorAll(".read-more");
-    const modals = document.querySelectorAll(".modal");
-    const closeButtons = document.querySelectorAll(".close-button");
-    
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const target = button.getAttribute("data-target");
-        document.getElementById(target).style.display = "block";
-      });
-    });
-    
-    closeButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        button.parentElement.parentElement.style.display = "none";
-      });
-    });
-    
-    window.addEventListener("click", (event) => {
-      modals.forEach((modale) => {
-        if (event.target === modale) {
-          modale.style.display = "none";
-        }
-      });
-    });
-}
 
+    modal += detailModal;
+  }
+
+  modelHtml.innerHTML = modal;
+
+  const buttons = document.querySelectorAll(".read-more");
+  const modals = document.querySelectorAll(".modal");
+  const closeButtons = document.querySelectorAll(".close-button");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const target = button.getAttribute("data-target");
+      document.getElementById(target).style.display = "block";
+    });
+  });
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      button.parentElement.parentElement.style.display = "none";
+    });
+  });
+
+  window.addEventListener("click", (event) => {
+    modals.forEach((modale) => {
+      if (event.target === modale) {
+        modale.style.display = "none";
+      }
+    });
+  });
+}

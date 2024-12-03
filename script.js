@@ -81,7 +81,7 @@ let structure = [
       "D163",
       "D163",
     ],
-    image: "AD2G.jpg",
+    image: "TS2N.jpg",
   },
   {
     id: "3T",

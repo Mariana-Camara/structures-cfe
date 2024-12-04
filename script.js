@@ -531,9 +531,418 @@ let structure = [
     ],
     image: "TD3G.jpg",
   },
+
+  {
+    id: "1P",
+    structure: "PS1N",
+    meaning: "Puntaposte Sencilla, 1 fase, neutro corrido",
+    description: "Estructura usada en líneas con retorno por tierra",
+    code: [
+      794155, 67172, 152, 741141, 793757, 175, 795811, 794326, 793736, 793733,
+      675200,
+    ],
+    material: [
+      "Poste PCR 12 750",
+      "Soporte SPA",
+      "Abrazadera 1BS",
+      "Aislador 13PD",
+      "Bastidor B1",
+      "Carrete H",
+      "Bajante de Tierra",
+      "Varilla Preformada",
+      "Alambre Cu#4",
+      "Alambre",
+      "Conectador",
+    ],
+    amount: [1, 1, 3, 1, 1, 1, 1, 2, 1, 1, 1],
+    unit: ["Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Kg", "Mts", "Pz"],
+    price: [8000, 3500, 2200, 4500, 2300, 1399, 2459, 1100, 80, 127, 1200],
+    store: [
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+    ],
+    image: "PS1N.jpg",
+  },
+
+  {
+    id: "2P",
+    structure: "PS3N",
+    meaning: "Puntaposte, Sencillo, 3 fases, Neutro corrido",
+    description: "Usado en areas urbanas donde no existe linea secundaria",
+    code: [
+      794155, 195, 151, 67172, 152, 741141, 793757, 793677, 175, 795811, 794326,
+      793736, 793733, 675200,
+    ],
+    material: [
+      "Poste PCR 12 750",
+      "Cruceta PT200",
+      "Abrazadera UC",
+      "Soporte SPA",
+      "Abrazadera 1BS",
+      "Aislador 13PD",
+      "Bastidor B1",
+      "Abrazadera 2BS",
+      "Carrete H",
+      "Bajante de Tierra",
+      "Varilla Preformada",
+      "Alambre Cu#4",
+      "Alambre",
+      "Conectador",
+    ],
+    amount: [1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 4, 3, 1, 1],
+    unit: [
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Kg",
+      "Mts",
+      "Pz",
+    ],
+    price: [
+      8000, 3500, 2200, 4500, 2300, 1399, 1256, 4500, 2459, 1100, 80, 127, 1200,
+      10,
+    ],
+    store: [
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+    ],
+    image: "PS3N.jpg",
+  },
+
+  {
+    id: "4P",
+    structure: "PD1N",
+    meaning: "Puntaposte, Doble, 1 fase, Neutro corrido",
+    description: "Usado en areas urbanas donde no existe linea secundaria",
+    code: [
+      794155, 195, 902, 67172, 156, 741141, 793757, 793677, 175, 234, 795811,
+      794326, 793736, 793733, 675200,
+    ],
+    material: [
+      "Poste PCR 12 750",
+      "Cruceta PT200",
+      "Perno DR 16 x 305",
+      "Soporte SPA",
+      "Abrazadera 1BD",
+      "Aislador 13PD",
+      "Bastidor B1",
+      "Abrazadera 2BS",
+      "Carrete H",
+      "Retenida",
+      "Bajante de Tierra",
+      "Varilla Preformada",
+      "Alambre Cu#4",
+      "Alambre",
+      "Conectador",
+    ],
+    amount: [1, 2, 4, 2, 2, 6, 1, 1, 1, 1, 1, 4, 3, 1, 1],
+    unit: [
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Kg",
+      "Mts",
+      "Pz",
+    ],
+    price: [
+      8000, 3500, 2200, 4500, 2300, 1399, 1256, 4500, 2459, 1100, 80, 127, 1200,
+      20, 319,
+    ],
+    store: [
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+    ],
+    image: "PD1N.jpg",
+  },
+
+  {
+    id: "4P",
+    structure: "PD3N",
+    meaning: "Punta Poste Trifásico con Neutro",
+    description: "Usado en areas urbanas donde no existe linea secundaria",
+    code: [
+      794155, 195, 902, 67172, 156, 741141, 793757, 793677, 175, 234, 795811,
+      794326, 793736, 793733, 675200,
+    ],
+    material: [
+      "Poste PCR 12 750",
+      "Cruceta PT200",
+      "Perno DR 16 x 305",
+      "Soporte SPA",
+      "Abrazadera 1BD",
+      "Aislador 13PD",
+      "Bastidor B1",
+      "Abrazadera 2BS",
+      "Carrete H",
+      "Retenida",
+      "Bajante de Tierra",
+      "Varilla Preformada",
+      "Alambre Cu#4",
+      "Alambre",
+      "Conectador",
+    ],
+    amount: [1, 2, 4, 2, 2, 6, 1, 1, 1, 1, 1, 4, 3, 1, 1],
+    unit: [
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Kg",
+      "Mts",
+      "Pz",
+    ],
+    price: [
+      8000, 3500, 2200, 4500, 2300, 1399, 1256, 4500, 2459, 1100, 80, 127, 1200,
+      20, 319,
+    ],
+    store: [
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+    ],
+    image: "PD3N.jpg",
+  },
+
+  {
+    id: "1R",
+    structure: "RP1N",
+    meaning: "Remate, Poste, 1 fase, Neutro corrido",
+    description: "Usado en areas urbanas donde no existe linea secundaria",
+    code: [794155, 158, 794127, 279515, 13807, 234, 861, 795811, 675200],
+    material: [
+      "Poste PCR 12 750",
+      "Abrazadera 1AG",
+      "Grillete GA1",
+      "Aislador 13SHL45N",
+      "Grapa remate",
+      "Retenida",
+      "Abrazadera 3 AG",
+      "Bajante de Tierra",
+      "Conectador",
+    ],
+    amount: [1, 1, 2, 1, 2, 3, 1, 1, 1],
+    unit: ["Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz"],
+    price: [8000, 3500, 2200, 4500, 2300, 1399, 1256, 4500, 2459],
+    store: [
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+    ],
+    image: "RP1N.jpg",
+  },
+
+  {
+    id: "2R",
+    structure: "RP1G",
+    meaning: "Remate, Poste, 1 fase, Guarda",
+    description: "Usado en areas urbanas donde no existe linea secundaria",
+    code: [794155, 158, 862, 279515, 13807, 234, 794127, 793882],
+    material: [
+      "Poste PCR 12 750",
+      "Abrazadera 1AG",
+      "Abrazadera 2AG",
+      "Aislador 13SHL45N",
+      "Grapa remate",
+      "Retenida",
+      "Grillete GA1",
+      "Conectador",
+    ],
+    amount: [1, 1, 1, 1, 2, 2, 2, 1],
+    unit: ["Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz"],
+    price: [8000, 3500, 2200, 4500, 2300, 1399, 1256],
+    store: ["D163", "D163", "D163", "D163", "D163", "D163", "D163", "D163"],
+    image: "RP1G.jpg",
+  },
+
+  {
+    id: "3R",
+    structure: "RD2N",
+    meaning: "Remate, Poste, 2 fases, Neutro Corrido",
+    description: "Usado en areas urbanas donde no existe linea secundaria",
+    code: [794155, 886, 225, 794145, 279515, 13807, 234, 795811, 862, 793882],
+    material: [
+      "Poste PCR 12 750",
+      "Cruceta PR200",
+      "Perno DR 16 x 457",
+      "Ojo RE",
+      "Aislador 13SHL45N",
+      "Grapa remate",
+      "Retenida",
+      "Bajante de Tierra",
+      "Abrazadera 2AG",
+      "Conectador",
+    ],
+    amount: [1, 2, 4, 2, 2, 3, 2, 1, 1, 1],
+    unit: ["Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz", "Pz"],
+    price: [8000, 3500, 2200, 4500, 2300, 1399, 1256, 4500, 2459, 1100],
+    store: [
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+    ],
+    image: "RD2N.jpg",
+  },
+
+  {
+    id: "4R",
+    structure: "RD2G",
+    meaning: "Remate, Poste, 2 fases, Guarda",
+    description: "Usado en areas urbanas donde no existe linea secundaria",
+    code: [
+      794155, 195, 151, 741141, 793757, 152, 175, 165, 795811, 794328, 793736,
+      793733, 675200,
+    ],
+    material: [
+      "Poste PCR 12 750",
+      "Cruceta C4R",
+      "Perno DR 16 x 457",
+      "Tuerca de ",
+      "Bastidor B1",
+      "Abrazadera 1BS",
+      "Carrete H",
+      "Placa 1PC",
+      "Bajante de Tierra",
+      "Varilla Preformada",
+      "Alambre Cu#4",
+      "Alambre",
+      "Conectador",
+    ],
+    amount: [1, 1, 1, 2, 1, 1, 1, 2, 1, 3, 2, 1, 1],
+    unit: [
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Pz",
+      "Kg",
+      "Pz",
+      "Kg",
+      "Mts",
+      "Pz",
+    ],
+    price: [
+      8000, 3500, 2200, 4500, 2300, 1399, 1256, 4500, 2459, 1100, 80, 127, 1200,
+    ],
+    store: [
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+      "D163",
+    ],
+    image: "RD2G.jpg",
+  },
 ];
 
 createCard([], 0);
+
+
+const cleanInput = ()=> {
+  let input, filter;
+
+  input = document.getElementById("buscador");
+  filter = input.value.toLowerCase();
+
+  if (filter.length !== 0) {
+    console.log('Aqui');
+    createCard([], 3);
+  }
+}
 
 function createCard(filter, state) {
   let card = "";
@@ -548,7 +957,7 @@ function createCard(filter, state) {
     for (let i = 0; i < structure.length; i++) {
       detailCard = `<div class="card" id="${structure[i].structure}" >
                               <h2>${structure[i].structure}</h2>
-                              <img src="assets/${structure[i].image}" alt="${structure[i].structure}" >
+                              <img src="assets/${structure[i].image}" alt="${structure[i].structure}" onerror="this.src='assets/empty.png'" >
                               <h3>${structure[i].meaning}</h3>
                               <p>${structure[i].description}</p>
                               <button class="read-more" data-target="${structure[i].id}">Leer más</button>
@@ -559,6 +968,9 @@ function createCard(filter, state) {
     }
     cardHtml.innerHTML = card;
   } else if (state === 1) {
+    document.getElementById("result").style.display = "none";
+    document.getElementById("container").style.display = "flex";
+
     for (let i = 0; i < structure.length; i++) {
       document.getElementById(`${structure[i].structure}`).style.display =
         "none";
@@ -569,7 +981,6 @@ function createCard(filter, state) {
     }
   } else if (state == 2) {
     // HTLM SIN RESULTADIS
-    // card = '<h2 style="margin-top: 8em;">Sin Resultados</h2>'
     document.getElementById("result").style.display = "block";
     document.getElementById("container").style.display = "none";
   } else {
@@ -583,8 +994,6 @@ function createCard(filter, state) {
   }
 
   if (state === 0) createModal();
-  // if(state === 0 || state === 1)
-  // createModal();
 }
 
 function createRow(index) {
@@ -621,8 +1030,6 @@ function search() {
   input = document.getElementById("buscador");
   filter = input.value.toLowerCase();
 
-  // if (filter.length >= 3) {
-
   let result = structure.filter(
     (str) =>
       str.structure.toLowerCase().includes(filter) ||
@@ -634,7 +1041,6 @@ function search() {
   if (result.length !== 0) createCard(result, 1);
   else createCard([], 2);
 
-  // } else
   if (filter.length === 0) {
     createCard([], 3);
   }
@@ -649,7 +1055,7 @@ function createModal() {
                     <div class="modal-content">
                         <span class="close-button">&times;</span>
                         <h2>${structure[i].structure}</h2>
-                        <img src="assets/${structure[i].image}" alt="${structure[i].structure}" >
+                        <img src="assets/${structure[i].image}" alt="${structure[i].structure}" onerror="this.src='assets/empty.png'" >
                         <h3>${structure[i].meaning}</h3>
                         <p>${structure[i].description}</p>
         

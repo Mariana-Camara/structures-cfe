@@ -13,7 +13,7 @@
 <body>
     <h1 class="title">Estructuras</h1>
     <form>
-        <input type="search" placeholder="Busca tu Estructura" id="buscador"  onkeyup="search()" />
+        <input type="search" placeholder="Busca tu Estructura" id="buscador"  onkeyup="search()" onclick="cleanInput()" />
         </form>
     
     <div id="container">
@@ -22,8 +22,11 @@
     <div id="modals">
     </div>
   
-    <h2 id="result" style="margin-top: 8em; text-align: center; display: none;">Sin Resultados</h2>
-
+    <h2 style="margin-top: 8em; text-align: center; display: none;" id="result" >
+        Sin Resultados
+    </h2>
+  
     <script src="script.js"></script>
+    <!-- <img src="" alt=""  > -->
 </body>
 </html>

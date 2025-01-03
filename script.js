@@ -1463,7 +1463,7 @@ let structure = [
       "D160-7000",
       "D163-1200"
     ],
-    image: "VS2.jpg"
+    image: "RD3N/RD3.jpg"
   },
 
   {
@@ -1549,7 +1549,7 @@ let structure = [
       "D163-7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "RD3G.jpg"
   },
 
   {
@@ -1647,7 +1647,7 @@ let structure = [
       "D163-1071,1100,7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "AD2N.jpg"
   },
 
   {
@@ -1745,7 +1745,7 @@ let structure = [
       "D163-1071,1100,7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "AD2G.jpg"
   },
 
   {
@@ -1850,7 +1850,7 @@ let structure = [
       "D163-1071,1100,7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "AD3N.jpg"
   },
 
   {
@@ -1954,7 +1954,7 @@ let structure = [
       "D163-1071,1100,7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "AD3G.jpg"
   },
 
   {
@@ -2058,7 +2058,7 @@ let structure = [
       "D163-1100, 7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "AP1N.jpg"
   },
   /////
   {
@@ -2162,7 +2162,7 @@ let structure = [
       "D163-1100, 7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "AP1G.jpg"
   },
 
   {
@@ -2269,7 +2269,7 @@ let structure = [
       "D163-1100, 7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "AP2N.jpg"
   },
 
   {
@@ -2385,7 +2385,7 @@ let structure = [
       "D163-1100, 7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "AP2G.jpg"
   },
 
   {
@@ -2507,7 +2507,7 @@ let structure = [
       "D163-1100, 7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "AP3N.jpg"
   },
 
   {
@@ -2631,7 +2631,7 @@ let structure = [
       "D163-1100, 7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "AP3G.jpg"
   },
 
   {
@@ -2711,7 +2711,7 @@ let structure = [
       "D163-7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "DP1N.jpg"
   },
 
   {
@@ -2791,7 +2791,7 @@ let structure = [
       "D163-7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "DP1G.jpg"
   },
 
   {
@@ -2877,7 +2877,7 @@ let structure = [
       "D163-7000",
       "D160-7000"
     ],
-    image: "VS2.jpg"
+    image: "DP2N.jpg"
   },
 ];
 

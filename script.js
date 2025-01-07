@@ -836,7 +836,7 @@ let structure = [
     id: "4P",
     structure: "PD1N",
     meaning: "Puntaposte, Doble, 1 fase, Neutro corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Esta estructura es usada principalmente para alojar cables de energía mediante tubos de polietileno de alta densidad. En líneas rurales se instalará un bajante de tierra cada 2 estructuras",
     code: [
       794156,
       195,
@@ -930,7 +930,7 @@ let structure = [
     id: "4P",
     structure: "PD3N",
     meaning: "Punta Poste Trifásico con Neutro",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se emplea en líneas de transmisión aérea para garantizar una adecuada distribución de la energía y cumplir con las normativas de seguridad y durabilidad requeridas.",
     code: [
       794155,
       195,
@@ -1024,7 +1024,7 @@ let structure = [
     id: "1R",
     structure: "RP1N",
     meaning: "Remate, Poste, 1 fase, Neutro corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Habitualmente se emplea en zonas donde es necesario realizar anclajes o cambios de dirección en la línea eléctrica",
     code: [794156,
       158,
       794127,
@@ -1082,7 +1082,7 @@ let structure = [
     id: "2R",
     structure: "RP1G",
     meaning: "Remate, Poste, 1 fase, Guarda",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Es una estructura destinada a la distribución en media y baja tensión, donde se requiere un anclaje más robusto",
     code: [794155,
       158,
       862,
@@ -1133,7 +1133,7 @@ let structure = [
     id: "3R",
     structure: "RD2N",
     meaning: "Remate, Poste, 2 fases, Neutro Corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se utiliza para rematar conductores pesados.",
     code: [794156,
       886,
       225,
@@ -1196,7 +1196,7 @@ let structure = [
     id: "4R",
     structure: "RD2G",
     meaning: "Remate, Poste, 2 fases, Guarda",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se utiliza solamente para rematar conductores pesados en líneas rurales.",
     code: [
       794156,
       884,
@@ -1280,7 +1280,7 @@ let structure = [
     id: "5R",
     structure: "RD3N",
     meaning: "Remate, Poste, 3 fases, Neutro corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se utiliza para rematar conductores pesados",
     code: [
       794156,
       886,
@@ -1366,7 +1366,7 @@ let structure = [
     id: "6R",
     structure: "RD3N/RD3",
     meaning: "Remate, Doble, 3 fases, Neutro corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Son estructuras de remate utilizadas en líneas de media tensión, especialmente en líneas aéreas",
     code: [
       794156,
       886,
@@ -1470,7 +1470,7 @@ let structure = [
     id: "7R",
     structure: "RD3G",
     meaning: "Remate, Poste, 3 fases, Guarda",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se empleacuando el cable neutro se encuentra por encima de las fases, aproximadamente a la misma distancia",
     code: [
       794156,
       886,
@@ -1556,7 +1556,7 @@ let structure = [
     id: "1A",
     structure: "AD2N",
     meaning: "Anclaje, Doble cruceta, 2 fases, Neutro corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se utiliza para anclar conductores pesados en cualquier lado del poste o en ambos",
     code: [
       794156,
       195,
@@ -1654,7 +1654,7 @@ let structure = [
     id: "2A",
     structure: "AD2G",
     meaning: "Anclaje, Doble cruceta, 2 fases, Guarda",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se utiliza para anclar conductores pesados en cualquier lado del poste o en ambos",
     code: [
       794156,
       195,
@@ -1752,7 +1752,7 @@ let structure = [
     id: "3A",
     structure: "AD3N",
     meaning: "Anclaje, Doble cruceta, 3 fases, Neutro corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se utiliza para anclar conductores pesados cuando menos en uno de los dos lados del poste",
     code: [
       794156,
       195,
@@ -1857,7 +1857,7 @@ let structure = [
     id: "4A",
     structure: "AD3G",
     meaning: "Anclaje, Doble cruceta, 3 fases, Guarda",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "USe utiliza para anclar conductores pesados cuando menos en uno de los dos lados del poste",
     code: [
       794156,
       886,
@@ -1961,7 +1961,7 @@ let structure = [
     id: "5A",
     structure: "AP1N",
     meaning: "Anclaje en poste, 1 fase, Neutro corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se usa para anclaje en poste para una fase y neutro corrido",
     code: [
       794156,
       193,
@@ -2065,7 +2065,7 @@ let structure = [
     id: "6A",
     structure: "AP1G",
     meaning: "Anclaje en poste, 1 fase, Guarda",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se usa para anclaje en poste para una fase y guarda",
     code: [
       794156,
       193,
@@ -2168,7 +2168,7 @@ let structure = [
   {
     id: "7A",
     structure: "AP2N",
-    meaning: "Anclaje en poste, 2 fases, Neutro corrido",
+    meaning: "Se usa para anclaje en poste para dos fases y neutro corrido",
     description: "Usado en areas urbanas donde no existe linea secundaria",
     code: [
       794156,
@@ -2276,7 +2276,7 @@ let structure = [
     id: "8A",
     structure: "AP2G",
     meaning: "Anclaje en poste, 2 fases, Guarda",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se usa para anclaje en poste para dos fases y guarda",
     code: [
       794156,
       193,
@@ -2392,7 +2392,7 @@ let structure = [
     id: "9A",
     structure: "AP3N",
     meaning: "Anclaje en poste, 3 fases, Neutro corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se usa para anclaje en poste para tres fases y neutro corrido",
     code: [
       794156,
       193,
@@ -2514,7 +2514,7 @@ let structure = [
     id: "10A",
     structure: "AP3G",
     meaning: "Anclaje en poste, 3 fases, Guarda",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se usa para anclaje en poste para tres fases y guarda",
     code: [
       794156,
       193,
@@ -2638,7 +2638,7 @@ let structure = [
     id: "1D",
     structure: "DP1N",
     meaning: "Deflexión de Paso, 1 fase, Neutro corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se usa habitualmente en tramos de línea en los que los aislantes presentan una ligera inclinación",
     code: [
       794156,
       158,
@@ -2718,7 +2718,7 @@ let structure = [
     id: "2D",
     structure: "DP1G",
     meaning: "Deflexión de Paso, 1 fase, Guarda",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se emplea en media tensión con guarda, se parecen mucho a la DP1N en su diseño, pero utilizan una configuración algo distinta",
     code: [
       794156,
       158,
@@ -2798,7 +2798,7 @@ let structure = [
     id: "3D",
     structure: "DP2N",
     meaning: "Deflexión de Paso, 2 fases, Neutro corrido",
-    description: "Usado en areas urbanas donde no existe linea secundaria",
+    description: "Se emplea en líneas donde se necesita soporte adicional debido a una mayor carga o condiciones específicas del terreno.",
     code: [
       794156,
       158,

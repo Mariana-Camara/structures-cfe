@@ -2949,26 +2949,24 @@ function createCard(filter, state) {
 }
 
 function createRow(index) {
-  const { code, unit, price, store, material, amount } = structure[index];
+  const { code, unit, price, material, amount } = structure[index];
 
   let rows = `<tr style=" font-weight: bold; ">
                         <td style="width: 16%;"> CÓDIGO  </td>
-                        <td style="width: 18%;"> UNIDADES  </td>
                         <td style="width: 23%;"> MATERIAL </td>
                         <td style="width: 17%;"> CANTIDAD </td>
+                        <td style="width: 18%;"> UNIDADES  </td>
                         <td style="width: 13%;"> PRECIO </td>
-                        <td style="width: 13%;"> ALMACEN </td>
                 </tr>
                 `;
 
   for (let i = 0; i < code.length; i++) {
     rows += `<tr>
                         <td> ${code[i]} </td>
-                        <td> ${unit[i]} </td>
                         <td> ${material[i]} </td>
                         <td> ${amount[i]} </td>
+                        <td> ${unit[i]} </td>
                         <td> ${price[i]} </td>
-                        <td> ${store[i]} </td>
                 </tr>
                 `;
   }
